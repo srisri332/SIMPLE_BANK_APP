@@ -22,7 +22,7 @@ type Server struct {
 func NewServer(config util.Config, store *db.Store) (*Server, error) {
 	tokenMaker, err := token.NewPasetoMaker("")
 	if err != nil {
-		return nil, fmt.Errorf("Cannot create token maker")
+		return nil, fmt.Errorf("cannot create token maker")
 	}
 	server := &Server{
 		config:     config,
