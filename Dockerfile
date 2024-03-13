@@ -16,7 +16,7 @@ COPY start.sh .
 RUN chmod 777 start.sh
 COPY wait-for.sh .
 RUN chmod 777 wait-for.sh
-COPY db/migration ./migration
+COPY db/migration ./db/migration
 
 EXPOSE 8080     
 CMD [ "/app/main" ]
